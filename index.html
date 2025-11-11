@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Demonstração</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #0078D7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #005A9E;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #0078D7;
+    }
+
+    button {
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005A9E;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #eee;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo à Página de Demonstração</h1>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <main>
+    <h2>Olá, mundo!</h2>
+    <p>Esta é uma página estática simples criada como exemplo. Você pode personalizá-la facilmente com seu próprio conteúdo.</p>
+    
+    <button id="botao">Clique em mim</button>
+    <p id="mensagem"></p>
+  </main>
+
+  <footer>
+    © 2025 - Página de Demonstração | Criada com HTML + CSS + JS
+  </footer>
+
+  <script>
+    document.getElementById("botao").addEventListener("click", function() {
+      const msg = document.getElementById("mensagem");
+      msg.textContent = "Você clicou no botão! 🎉";
+    });
+  </script>
+</body>
+</html>
